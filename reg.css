@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display:flex;
+    width: 100%;
+    justify-content: right;
+    align-items: right;
+    background-color: green;
+    position :sticky;
+    top: 0;
+    z-index:1;
+    
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+.navbar ul li a{
+     text-decoration: cornsilk;
+     color: white;
+     padding: 8px 25px;
+     transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+     color: black;
+     box-shadow: 0 0 10px white;
+
+}
+
+body{
+    background-image: url(./Yoga-Asana\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar .img-logo{
+     margin-right: 800px;
+     width : 4px;
+     height: 4px;
+
+}
+
+.home{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-color: blanchedalmond;
+    font-family: sans-serif;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.home .body{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+}
+
+.home .container{
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.home .form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+    background-color:green;
+}
+
+.home .main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.home .user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.home .user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.home .user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.home .user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.home .batch-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.home .batch-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.home .batch-category label{
+    padding: 0 20px 0 5px;
+}
+
+.home .batch-category label,
+.home .batch-category input,
+.home .form-pay-btn input
+{
+    cursor: pointer;
+}
+
+.home .form-pay-btn{
+    margin-top: 40px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.home .form-pay-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgb(56, 56, 207);
+}
+
+.home .form-pay-btn input:hover{
+    background: blue;
+    color: rgb(255, 255, 255);
+}
+
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .home .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .home .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .home .batch-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .home .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .home .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+
+    
+  .home .form-control.success input{
+        border:2px solid rgb(26, 167, 26);
+    }
+   .home .form-control.error input{
+        border:2px solid rgb(228, 29, 22);
+    }
+   .home .form-control small{
+        position:absolute;
+        margin: 3px;
+        visibility: hidden;
+    }
+ .home  .user-input-box .p{
+font-size: 15px;
+color: #fff;
+    }
+.home .user-input-box .batch{
+        width:  200%;
+        height: 40%;
+}
+
+.home .user-input-box .popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+}
+    
+
+
+
+

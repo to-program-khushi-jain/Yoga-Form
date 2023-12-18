@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogfit Registeration</title>
+    <link rel ="stylesheet" href = "reg.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+</head>
+<div>
+    <div class ="navbar">
+        <div class = "max-width"></div>
+       
+        <ul>
+            
+            <li><a href = "/index.html">Home</a></li>
+            <li><a href = "/reg.html">Register</a></li>
+          
+            
+            
+        </ul>
+        </div>
+    </nav>
+
+    <!--name display for home -->
+    <section class = "home" id = "home">
+        
+        <div class="container">
+            <h1 class="form-title">Registration</h1>
+            <form action="save.php" id = "form" onsubmit="return CompletePayment()" method="POST">
+              <div class="main-user-info">
+                <div class="user-input-box">
+                  <label for="fullName">Full Name</label>
+                  <input type="text"
+                          id="fullName" pattern="[a-zA-Z\s]+$"
+                          name="fullName"
+                          placeholder="Enter Full Name" required/>
+                          
+                </div>
+                
+                <div class="user-input-box">
+                  <label for="email">Email</label>
+                  <input type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Enter Email" required/>
+                          
+                </div>
+                <div class="user-input-box">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" pattern="[1-9]{1}[0-9]{9}" 
+                          id="phoneNumber" minlength="10" maxlength="10"
+                          name="phoneNumber"
+                          placeholder="Enter Phone Number" required/>
+                          
+                </div>
+                <div class="user-input-box">
+                  <label for="password">Password</label>
+                  <input type="password" minlength="8"
+                          id="password"
+                          name="password"
+                          placeholder="Enter Password" required/>
+                        
+                </div>
+               
+              <div class="user-input-box">
+                <label for="age">Age</label>
+              <input type="number"
+                      id="age"
+                      name="age" min = 18 max="65"
+                      placeholder="Enter your age" required/>
+                      
+                </div>
+            
+            
+              
+              <div class="user-input-box">
+                
+                <label>Choose a batch</label>
+                <input list="batch" name="batch" required/></label>
+<datalist id="batch">
+    <option value = "5-6 AM">
+  <option value="6-7 AM">
+  <option value="7-8 AM">
+  <option value="5-6 PM">
+  
+</datalist>
+                </div>
+                </div>
+              
+              <div class="form-pay-btn">
+                <input type="submit" value="Proceed to Pay 500rs" id="pay"/>
+                
+            <div class = "popup" id = "textField" style = "display: none;">
+                <img src = "404-tick.png" id="404-tick">
+                <h2> Thank You!</h2>
+                 Your payment has been received.Congratulations you are registered.Hope you have a wonderful journey with us.. </p>
+                
+            </div>
+            </div>
+            </div>
+            </form>
+          </div>
+</section>
+            
+<script src = "index.js"></script>
+</body>   
+</html>
