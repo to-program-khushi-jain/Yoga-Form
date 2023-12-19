@@ -1,7 +1,7 @@
 **Project Name** : Yoga Registeration Form
 
 Project related files and ER Diagram alongwith database photo is also attached in the repository.
-Website Link: https://remarkable-tapioca-a90c0d.netlify.app/reg
+Website Link: https://remarkable-tapioca-a90c0d.netlify.app
 
 **Tech-Stack** : HTML,CSS,PHP,JavaScript
 
