@@ -37,7 +37,7 @@ The project comprised two distinct parts: frontend and backend.
 5. **CSS Styling:** Leveraged CSS to enhance website features, improving the overall aesthetics and user-friendliness.
 
 ### B. Backend
-### Technologies Used: PHP, JavaScript
+### Technologies Used: PHP
 
 1. **Server Setup:** Installed XAMPP server, MySQL server, and PHPMyAdmin, facilitating local development.
 
